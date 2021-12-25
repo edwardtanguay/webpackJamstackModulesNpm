@@ -15,7 +15,7 @@ ${DisplayHeader({ supertitle: 'Example of reading a JSON file', header: 'Users'}
 	</ul>
 </div>
 
-${DisplayHeader({ supertitle: 'Example of custom components', header: 'Web Technology'})}
+${DisplayHeader({ supertitle: 'Example of custom components and npm package', header: 'Web Technology'})}
 	${DisplayInfo({name: "Webpack", created: 2012, included: true})}
 	${DisplayInfo({name: "Browserify", created: 2010, included: false})}
 </div>
