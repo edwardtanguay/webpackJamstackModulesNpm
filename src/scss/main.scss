@@ -1,0 +1,59 @@
+body {
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	font-size: 1.6rem;
+	padding: 20px;
+}
+
+.app {
+	h2 {
+		color: beige;
+		background-color: #333;
+		padding: 3px;
+		width: 500px;
+		margin: 0 0 5px 0;
+	}
+	.supertitle {
+		width: 300px;
+		padding: 3px;
+		background-color: yellow;
+		font-variant: small-caps;
+		font-size: 0.8rem;
+	}
+	ul.users {
+		list-style-type: disc;
+		margin: 0 0 0 30px;
+		li {
+			font-size: 1.3rem;
+		}
+	}
+	.exampleSection {
+		margin: 0 0 20px 0;
+	}
+
+	div.displayInfo {
+		margin: 0 0 10px 0;
+		div.infoRow {
+			font-size: 1.3rem;
+			display: flex;
+			border-bottom: 1px solid #aaa;
+			width: 490px;
+
+			div {
+				padding: 5px;
+			}
+			.label {
+				font-weight: bold;
+				background-color: #333;
+				color: orange;
+				width: 90px;
+			}
+
+			.data {
+				background-color: #ccc;
+				font-family: "Courier New", Courier, monospace;
+				color: #333;
+				width: 400px;
+			}
+		}
+	}
+}
