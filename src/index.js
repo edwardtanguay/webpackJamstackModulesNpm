@@ -7,10 +7,11 @@ import { SectionUsers } from './components/SectionUsers.js';
 
 document.querySelector('title').innerHTML = 'Basic Webpack Site';
 
-document.querySelector('.app').innerHTML = `
+(async () => {
+	document.querySelector('.app').innerHTML = `
 <div class="section">
-	${DisplayHeader({ supertitle: 'Example of reading a JSON file', header: 'Users' })}
-	${SectionUsers()}
+	${DisplayHeader({ supertitle: 'Example of fetching data from a local JSON file and external API', header: 'Users' })}
+	${await SectionUsers()}
 </div>
 
 <div class="section">
@@ -24,4 +25,5 @@ document.querySelector('.app').innerHTML = `
 	${SectionWordSearch()}
 </div>
 `;
+})();
 

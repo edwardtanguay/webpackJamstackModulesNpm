@@ -13,7 +13,7 @@ body {
 		margin: 0 0 5px 0;
 	}
 	.supertitle {
-		width: 300px;
+		width: 400px;
 		padding: 3px;
 		background-color: yellow;
 		font-variant: small-caps;
@@ -30,6 +30,10 @@ body {
 			li {
 				font-size: 1.3rem;
 			}
+		}
+		.origin {
+			color: brown;
+			font-size: 1rem;
 		}
 	}
 

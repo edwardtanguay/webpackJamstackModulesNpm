@@ -1,14 +1,17 @@
 [
 	{
 		"firstName": "Angelika",
-		"lastName": "Schröder"
+		"lastName": "Schröder",
+		"origin": "local"
 	},
 	{
 		"firstName": "Hendrik",
-		"lastName": "Strauß"
+		"lastName": "Strauß",
+		"origin": "local"
 	},
 	{
 		"firstName": "Sergey",
-		"lastName": "Brandon"
+		"lastName": "Brandon",
+		"origin": "local"
 	}
 ]
