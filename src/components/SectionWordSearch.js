@@ -9,6 +9,7 @@ function searchWords() {
 	const searchText = searchTextElem.value;
 	const totalElem = document.querySelector('.total');
 	if(searchText === '') {
+		resultsElem.style.display = 'none';
 		resultsElem.innerHTML = '';
 		totalElem.innerHTML = '';
 	} else {
@@ -18,6 +19,7 @@ function searchWords() {
 				return word;
 			}
 		});
+		resultsElem.style.display = 'block';
 		resultsElem.innerHTML = foundWords.join(', ');
 		totalElem.innerHTML = foundWords.length + ' words found';
 	}
@@ -29,7 +31,7 @@ export const SectionWordSearch = () => {
 	return `
 	<div class="sectionWordSearch">
 		<div>Search: <input class="searchText" type="text" onkeyup="searchWords()" /> <span class="total"></span> </div>	
-		<div class="results"></div>
+		<div class="results" style="display:none"></div>
 	</div>
 	`;
 }

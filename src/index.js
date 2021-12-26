@@ -1,14 +1,13 @@
 import './scss/reset.scss';
 import './scss/main.scss';
 import { DisplayHeader } from './components/DisplayHeader.js';
-import { SectionWebTechnology } from './components/SectionInfo.js';
+import { SectionWebTechnology } from './components/SectionWebTechnology.js';
 import { SectionWordSearch } from './components/SectionWordSearch.js';
 import { SectionUsers } from './components/SectionUsers.js';
 
 document.querySelector('title').innerHTML = 'Basic Webpack Site';
 
 document.querySelector('.app').innerHTML = `
-
 <div class="section">
 	${DisplayHeader({ supertitle: 'Example of reading a JSON file', header: 'Users' })}
 	${SectionUsers()}
