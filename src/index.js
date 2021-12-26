@@ -1,21 +1,17 @@
 import './scss/reset.scss';
 import './scss/main.scss';
 import { DisplayHeader } from './components/DisplayHeader.js';
-import { SectionWebTechnology as SectionWebTechnology } from './components/SectionInfo.js';
-import { SectionWordSearch as SectionWordSearch } from './components/SectionWordSearch.js';
-
-import users from './data/users.json';
+import { SectionWebTechnology } from './components/SectionInfo.js';
+import { SectionWordSearch } from './components/SectionWordSearch.js';
+import { SectionUsers } from './components/SectionUsers.js';
 
 document.querySelector('title').innerHTML = 'Basic Webpack Site';
-
 
 document.querySelector('.app').innerHTML = `
 
 <div class="section">
 	${DisplayHeader({ supertitle: 'Example of reading a JSON file', header: 'Users' })}
-	<ul class="users">
-	${users.map(user => '<li>' + user.lastName + ', ' + user.firstName + '</li>').join('')}
-	</ul>
+	${SectionUsers()}
 </div>
 
 <div class="section">
