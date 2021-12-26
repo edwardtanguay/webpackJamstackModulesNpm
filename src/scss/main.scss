@@ -19,15 +19,18 @@ body {
 		font-variant: small-caps;
 		font-size: 0.8rem;
 	}
-	ul.users {
-		list-style-type: disc;
-		margin: 0 0 0 30px;
-		li {
-			font-size: 1.3rem;
-		}
-	}
 	.section {
 		margin: 0 0 20px 0;
+	}
+
+	.sectionUsers {
+		ul.users {
+			list-style-type: disc;
+			margin: 0 0 0 30px;
+			li {
+				font-size: 1.3rem;
+			}
+		}
 	}
 
 	.sectionWebTechnology {
@@ -56,4 +59,21 @@ body {
 			}
 		}
 	}
+
+	.sectionWordSearch {
+		.results {
+			color: brown;
+			font-size: 1rem;
+			background-color: #eee;
+			padding: 10px;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			margin: 10px;
+		}
+		.total {
+			color: brown;
+			font-size: 1rem;
+		}
+	}
+
 }
