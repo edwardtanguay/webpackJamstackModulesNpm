@@ -22,10 +22,10 @@ function searchWords() {
 		totalElem.innerHTML = foundWords.length + ' words found';
 	}
 }
-`
+`;
 document.head.appendChild(scriptElement);
 
-export const WordSearch = () => {
+export const SectionWordSearch = () => {
 	return `
 <div>Search: <input class="searchText" type="text" onkeyup="searchWords()" /> <span class="total"></span> </div>	
 <div class="results"></div>

@@ -1,8 +1,8 @@
 import './scss/reset.scss';
 import './scss/main.scss';
-import { DisplayInfo } from './components/DisplayInfo.js';
 import { DisplayHeader } from './components/DisplayHeader.js';
-import { WordSearch } from './components/WordSearch.js';
+import { SectionWebTechnology as SectionWebTechnology } from './components/SectionInfo.js';
+import { SectionWordSearch as SectionWordSearch } from './components/SectionWordSearch.js';
 
 import users from './data/users.json';
 
@@ -19,11 +19,11 @@ ${DisplayHeader({ supertitle: 'Example of reading a JSON file', header: 'Users'}
 </div>
 
 ${DisplayHeader({ supertitle: 'Example of custom components and npm package', header: 'Web Technology'})}
-	${DisplayInfo({name: "Webpack", created: 2012, included: true})}
-	${DisplayInfo({name: "Browserify", created: 2010, included: false})}
+	${SectionWebTechnology({name: "Webpack", created: 2012, included: true})}
+	${SectionWebTechnology({name: "Browserify", created: 2010, included: false})}
 </div>
 
 ${DisplayHeader({supertitle: 'Example of npm package and interactivity', header: 'Word Search'})}
-${WordSearch()}
+${SectionWordSearch()}
 `;
 

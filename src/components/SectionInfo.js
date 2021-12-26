@@ -6,9 +6,9 @@ const highlight = (text) => {
 	return `<span style="color: red">${text}</span>`;
 }
 
-export const DisplayInfo = ({ name, created, included }) => {
+export const SectionWebTechnology = ({ name, created, included }) => {
 	return `
-	<div class="displayInfo">
+	<div class="sectionWebTechnology">
 		<div class="infoRow">
 			<div class="label">Name${suffix}</div>
 			<div class="data">${name}</div>
