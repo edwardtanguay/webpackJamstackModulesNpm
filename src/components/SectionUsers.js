@@ -11,7 +11,7 @@ export const SectionUsers = async () => {
 		const apiUsers = response.data.map(user => {
 			user.origin = 'external API';
 			return user;
-		});
+		}).slice(0, 3);
 
 		const users = localUsers.concat(apiUsers);
 		return `
