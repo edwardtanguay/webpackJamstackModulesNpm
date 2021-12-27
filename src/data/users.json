@@ -2,16 +2,16 @@
 	{
 		"firstName": "Angelika",
 		"lastName": "Schröder",
-		"origin": "local"
+		"origin": "local JSON file"
 	},
 	{
 		"firstName": "Hendrik",
 		"lastName": "Strauß",
-		"origin": "local"
+		"origin": "local JSON file"
 	},
 	{
 		"firstName": "Sergey",
 		"lastName": "Brandon",
-		"origin": "local"
+		"origin": "local JSON file"
 	}
 ]

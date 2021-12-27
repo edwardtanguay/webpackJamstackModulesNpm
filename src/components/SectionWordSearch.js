@@ -1,8 +1,7 @@
 import words from 'an-array-of-english-words';
+import { insertJavaScriptOnPage } from '../tools/insertJavaScriptOnPage.js';
 
-const scriptElement = document.createElement('script');
-scriptElement.type = 'text/javascript';
-scriptElement.innerText = `
+insertJavaScriptOnPage(`
 function searchWords() {
 	const searchTextElem = document.querySelector('.searchText');
 	const resultsElem = document.querySelector('.results');
@@ -24,8 +23,7 @@ function searchWords() {
 		totalElem.innerHTML = foundWords.length + ' words found';
 	}
 }
-`;
-document.head.appendChild(scriptElement);
+`);
 
 export const SectionWordSearch = () => {
 	return `
