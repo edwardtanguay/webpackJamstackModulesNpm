@@ -28,6 +28,7 @@ function searchWords() {
 export const SectionWordSearch = () => {
 	return `
 	<div class="sectionWordSearch">
+		<img class="searchIcon" src="images/search.png"/>
 		<div>Search: <input class="searchText" type="text" onkeyup="searchWords()" /> <span class="total"></span> </div>	
 		<div class="results" style="display:none"></div>
 	</div>
