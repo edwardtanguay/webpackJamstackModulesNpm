@@ -14,7 +14,7 @@ function searchWords() {
 	} else {
 		const words = [${words.map(word => "'" + word + "'").join(',')}];
 		const foundWords = words.filter(word => {
-			if(word.includes(searchText)) {
+			if(word.toLowerCase().includes(searchText.toLowerCase())) {
 				return word;
 			}
 		});
